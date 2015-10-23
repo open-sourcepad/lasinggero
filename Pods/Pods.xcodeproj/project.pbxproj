@@ -6,43 +6,487 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		0B8B1E0972337D202D42029555895148 /* Pods-lasinggero-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B841555C592DBB8B01D986BA2656A4A0 /* Pods-lasinggero-dummy.m */; };
+		10B42059BD811539813DC2134C80D362 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F998248A6449F8F2FE63D11D60BD22A /* ResponseSerialization.swift */; };
+		119C7EA62445C8DADBE4238575586A9B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E97C3492F2EA26AE37142E54B6386989 /* Foundation.framework */; };
+		17B0CF9E3641375AC482BD68E00FC9F1 /* Pods-lasinggeroTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5621CF2F9B253B81878982E35A4361E6 /* Pods-lasinggeroTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1ED391C8D1E5E1954CE297F0AA553B33 /* Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC583B566048A1C6CA72F846B433904 /* Download.swift */; };
+		2ECA5D631AA5DBC48F7502B00BE82491 /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FD4DB8EF63C212CB004BB742CACD13 /* MultipartFormData.swift */; };
+		30A5E36C56AA2217F6F0B865F13B8D36 /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 913599AEFFE01A6847CBA578456B34AA /* Alamofire-dummy.m */; };
+		324BA5646771B82525952A6DB0F5FA6E /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01067D6C22061BD428A97C5F5FBD5D81 /* Error.swift */; };
+		49F2672FF450B6AE585A2B740F9D2B98 /* Pods-lasinggero-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 063E138D34B2754D791C17F66A604259 /* Pods-lasinggero-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5FBF6EC70B0546266C681C64EA238E97 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A810AE181C28AAEBBE3DF0C6C71A7F06 /* Validation.swift */; };
+		6E89457B364D2940DD87D83EDCC5CA4F /* Pods-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E168626150052F57CB6B63DE7373444 /* Pods-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		714F5BACF7734738BBB9940D30108A36 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = B912E5A35E8F2036A668A56590B84D93 /* Response.swift */; };
+		83CBDF96B5F99399E6B4C5965D1A76C5 /* Pods-lasinggeroUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 342286D97956C87F784E4EEDE5B94B16 /* Pods-lasinggeroUITests-dummy.m */; };
+		891FFAD94E13F6990D6AC6C163EBE55D /* Upload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F32ECEB058E792C68B81221465C299E /* Upload.swift */; };
+		8EA972AF9758DAB27B8E4B5E7EFDCCDE /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CE2031A3B2714BD9A7E2DB9F9F72B0 /* ServerTrustPolicy.swift */; };
+		99F4CF3AD233592328A79B9139EC8BD5 /* Stream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B4DC95DAC85F24212A6C0CDEEB972E /* Stream.swift */; };
+		9F90FE2EB836C2B4C1E5B174939CD179 /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0387D7074091ECBB1F77EDC011127E51 /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A13D9C7CC83D767268AE444C44B46D6D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E97C3492F2EA26AE37142E54B6386989 /* Foundation.framework */; };
+		B16A686D1BA13E410CCB9CE13EF4A5A3 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E9A534EF6E528FC8EE446BCF68E20D6 /* Pods-dummy.m */; };
+		B26C78A4A736EFDD5EC57E64BBCE0C24 /* Pods-lasinggeroTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 93316D24044036647C53E1FC67DCACE6 /* Pods-lasinggeroTests-dummy.m */; };
+		C0729DDD115083F754E2E51ECAE3A662 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7555398D9629F7A31921C51493462B1 /* Result.swift */; };
+		C23B2CA2809B1A2E2121A3DC4565733B /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308579A47369157BBA9893BC39CC7A52 /* ParameterEncoding.swift */; };
+		C76391A512837D71828E56D8313CF7D4 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA33C7279936BE7DFF4698581EBCE8BF /* Alamofire.swift */; };
+		C90C6E18B6181474F39702F4A18656A9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E97C3492F2EA26AE37142E54B6386989 /* Foundation.framework */; };
+		CAB854BEE24AA2A7429C71C719366118 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E97C3492F2EA26AE37142E54B6386989 /* Foundation.framework */; };
+		D388D6BEA714D6740C8622AAFCEDB203 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = A484CB3CE2AE906D29B6314039C8906F /* Request.swift */; };
+		DB2DE4C6F8F5B8905522008C1E4BC4AC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E97C3492F2EA26AE37142E54B6386989 /* Foundation.framework */; };
+		F4C95DD3615CFE23496F80897321F929 /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AFE740DC52ACC2680CB6F97D6CB8FA4 /* Manager.swift */; };
+		F6B6E58B67D1D1D4A7CB8FEB4EB30722 /* Pods-lasinggeroUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 71B906FB5916CFED75064B97517D47D0 /* Pods-lasinggeroUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5C2328817C4B0666CEFDC540810EF432 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E95AAC1E5BE8CDDE1938C0835D880516;
+			remoteInfo = Alamofire;
+		};
+		7C3C463A4DF04848067873DFE4B78C76 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E95AAC1E5BE8CDDE1938C0835D880516;
+			remoteInfo = Alamofire;
+		};
+		870C0663CADD02A17C1E7EB4B22A5476 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E95AAC1E5BE8CDDE1938C0835D880516;
+			remoteInfo = Alamofire;
+		};
+		8EA931B6143CD12563F3E8D5D3C059F4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E95AAC1E5BE8CDDE1938C0835D880516;
+			remoteInfo = Alamofire;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		01067D6C22061BD428A97C5F5FBD5D81 /* Error.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Error.swift; path = Source/Error.swift; sourceTree = "<group>"; };
+		0387D7074091ECBB1F77EDC011127E51 /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
+		0448EE4C443344F5B7D4764A9B8DA98B /* Pods-lasinggeroTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-lasinggeroTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		063E138D34B2754D791C17F66A604259 /* Pods-lasinggero-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-lasinggero-umbrella.h"; sourceTree = "<group>"; };
+		1269860EBF23A03CD4B38CBB8932ED4D /* Pods-lasinggeroTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-lasinggeroTests-resources.sh"; sourceTree = "<group>"; };
+		15B4DC95DAC85F24212A6C0CDEEB972E /* Stream.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Stream.swift; path = Source/Stream.swift; sourceTree = "<group>"; };
+		1E6E21DE5D84A3021412BBD509510E1E /* Pods-lasinggero.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-lasinggero.modulemap"; sourceTree = "<group>"; };
+		235A4F35AFF94B07389263E16FF4BA2B /* Pods-lasinggeroTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-lasinggeroTests.modulemap"; sourceTree = "<group>"; };
+		24096B0AFDC3A74C2BD1C8432EF03BBA /* Pods-lasinggeroTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-lasinggeroTests-frameworks.sh"; sourceTree = "<group>"; };
+		2B8199E7A1D14611744328332505F69C /* Pods-lasinggero-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-lasinggero-acknowledgements.markdown"; sourceTree = "<group>"; };
+		2C5688DD70F15CD1314758325C627EBE /* Pods-lasinggeroUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-lasinggeroUITests-resources.sh"; sourceTree = "<group>"; };
+		2DD70417B32A18A9B4C0861619F5037E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
+		2E168626150052F57CB6B63DE7373444 /* Pods-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-umbrella.h"; sourceTree = "<group>"; };
+		308579A47369157BBA9893BC39CC7A52 /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
+		342286D97956C87F784E4EEDE5B94B16 /* Pods-lasinggeroUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-lasinggeroUITests-dummy.m"; sourceTree = "<group>"; };
+		373DBC28A07E884DDCFA358AF7328E27 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FCF5078C71E2D1202EF62E8F0888140 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43BFB47840DBE4DCCD76D42ED6433DA8 /* Pods-lasinggero-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-lasinggero-resources.sh"; sourceTree = "<group>"; };
+		47CE2031A3B2714BD9A7E2DB9F9F72B0 /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
+		4BCA2FE7AFFED8DBB95322839EF5F5A1 /* Alamofire-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Alamofire-Private.xcconfig"; sourceTree = "<group>"; };
+		4D64B898A6BF75BB814ACC1BBA265636 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
+		53014C0B2AAAF33BF964C197C5A3E799 /* Pods-lasinggeroUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-lasinggeroUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5621CF2F9B253B81878982E35A4361E6 /* Pods-lasinggeroTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-lasinggeroTests-umbrella.h"; sourceTree = "<group>"; };
+		5B1C17A7C914BBA5A8FE694AA5768E92 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5EF40C5F8EA54FFAD54F4D4377F07B62 /* Pods-lasinggeroUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-lasinggeroUITests.modulemap"; sourceTree = "<group>"; };
+		600D59FC9D161052EC47BDFF794D8B95 /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Alamofire.modulemap; sourceTree = "<group>"; };
+		6AC583B566048A1C6CA72F846B433904 /* Download.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Download.swift; path = Source/Download.swift; sourceTree = "<group>"; };
+		6F70C5073F2A79FC651E7D343AEEB3F2 /* Pods-lasinggeroUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-lasinggeroUITests-frameworks.sh"; sourceTree = "<group>"; };
+		7083D5E8E179844F65757E7345115165 /* Pods_lasinggeroUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_lasinggeroUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		70F6B49B392097FA58669F5F730B96E0 /* Pods.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Pods.modulemap; sourceTree = "<group>"; };
+		71B906FB5916CFED75064B97517D47D0 /* Pods-lasinggeroUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-lasinggeroUITests-umbrella.h"; sourceTree = "<group>"; };
+		748D15B94C790CD9A8BBFB8EE0185EC2 /* Pods-lasinggeroUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-lasinggeroUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		782DBEEEA64894EEE3980B5FA9BDECAB /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
+		7917ACE976DAA09E8AA245AE8474F06B /* Pods-lasinggero-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-lasinggero-acknowledgements.plist"; sourceTree = "<group>"; };
+		7AFE740DC52ACC2680CB6F97D6CB8FA4 /* Manager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Manager.swift; path = Source/Manager.swift; sourceTree = "<group>"; };
+		88029B8BF7451151D8B9A569016A27CC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E9A534EF6E528FC8EE446BCF68E20D6 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		8F32ECEB058E792C68B81221465C299E /* Upload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Upload.swift; path = Source/Upload.swift; sourceTree = "<group>"; };
+		8F998248A6449F8F2FE63D11D60BD22A /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
+		913599AEFFE01A6847CBA578456B34AA /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
+		91528EAF1C40F98B8D8784918564E980 /* Pods-lasinggeroUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-lasinggeroUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		93316D24044036647C53E1FC67DCACE6 /* Pods-lasinggeroTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-lasinggeroTests-dummy.m"; sourceTree = "<group>"; };
+		98FD4DB8EF63C212CB004BB742CACD13 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
+		9E025B1E85A334F873CC8ADDB9D344C0 /* Pods-lasinggeroTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-lasinggeroTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A484CB3CE2AE906D29B6314039C8906F /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
+		A810AE181C28AAEBBE3DF0C6C71A7F06 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
+		A906221524D8FAA1401F7873078B6D3B /* Pods_lasinggeroTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_lasinggeroTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B31690DEA481D6D8D7B4B158F79EF692 /* Pods-lasinggeroTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-lasinggeroTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B841555C592DBB8B01D986BA2656A4A0 /* Pods-lasinggero-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-lasinggero-dummy.m"; sourceTree = "<group>"; };
+		B8806FBC6E47A7D20CFCBFBAD9378CFB /* Pods-lasinggeroTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-lasinggeroTests.release.xcconfig"; sourceTree = "<group>"; };
+		B912E5A35E8F2036A668A56590B84D93 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
+		BA33C7279936BE7DFF4698581EBCE8BF /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C1F422624B218EC51EA46240D1F1077E /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
+		C7555398D9629F7A31921C51493462B1 /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
+		C7F85CD4A453995404A3B592E0D8673C /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
+		C8A0D576D6AE75E79B02E624E98B05EC /* Pods-lasinggero-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-lasinggero-frameworks.sh"; sourceTree = "<group>"; };
+		CCA80A788FCD39C30393B7D7B0DC0438 /* Pods-lasinggero.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-lasinggero.release.xcconfig"; sourceTree = "<group>"; };
+		D157DB07E7E9290AA80696DC9BF79061 /* Pods-lasinggero.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-lasinggero.debug.xcconfig"; sourceTree = "<group>"; };
+		D3241E940B21C722BFC39B78B99AC42D /* Pods-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-frameworks.sh"; sourceTree = "<group>"; };
+		D56F55C5D5839CA6F6D36471ECA9F07D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D66F9047532B4A590E57FFF50AFFD2C3 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
+		E61E13E6D32F5DC58B019AA9B4798006 /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E97C3492F2EA26AE37142E54B6386989 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		ECD8F7B65E5DE6614DCE912E7FF55F4D /* Pods-lasinggeroUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-lasinggeroUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F4EC11768DC53285CEFC4495D1776E48 /* Pods_lasinggero.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_lasinggero.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F59C6B5D0B92D064A2C555B81A9A4031 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDBF3F3AE4B6796B230E920D4463EBF4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFrameworksBuildPhase section */
+		0BD8B6A8CC188DF934A5BEAA8EC99D87 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A13D9C7CC83D767268AE444C44B46D6D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4443EC7F149225B890CC52BAA5D41FF0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C90C6E18B6181474F39702F4A18656A9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95E8776D2E66DFC0A14F1CC4BEBF4AFE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				119C7EA62445C8DADBE4238575586A9B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9993769FEA8B878853AA5F4E8EE86970 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAB854BEE24AA2A7429C71C719366118 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D48067F0F24107BD590C7D83FFC5A092 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB2DE4C6F8F5B8905522008C1E4BC4AC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
 /* Begin PBXGroup section */
-		0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */ = {
+		15DF9869C403D50600A190F63E6A4E3F /* Pods-lasinggeroUITests */ = {
 			isa = PBXGroup;
 			children = (
+				D56F55C5D5839CA6F6D36471ECA9F07D /* Info.plist */,
+				5EF40C5F8EA54FFAD54F4D4377F07B62 /* Pods-lasinggeroUITests.modulemap */,
+				748D15B94C790CD9A8BBFB8EE0185EC2 /* Pods-lasinggeroUITests-acknowledgements.markdown */,
+				91528EAF1C40F98B8D8784918564E980 /* Pods-lasinggeroUITests-acknowledgements.plist */,
+				342286D97956C87F784E4EEDE5B94B16 /* Pods-lasinggeroUITests-dummy.m */,
+				6F70C5073F2A79FC651E7D343AEEB3F2 /* Pods-lasinggeroUITests-frameworks.sh */,
+				2C5688DD70F15CD1314758325C627EBE /* Pods-lasinggeroUITests-resources.sh */,
+				71B906FB5916CFED75064B97517D47D0 /* Pods-lasinggeroUITests-umbrella.h */,
+				53014C0B2AAAF33BF964C197C5A3E799 /* Pods-lasinggeroUITests.debug.xcconfig */,
+				ECD8F7B65E5DE6614DCE912E7FF55F4D /* Pods-lasinggeroUITests.release.xcconfig */,
 			);
-			name = Frameworks;
+			name = "Pods-lasinggeroUITests";
+			path = "Target Support Files/Pods-lasinggeroUITests";
+			sourceTree = "<group>";
+		};
+		20C396BA1B90EEE39D4B19FE012C4F6D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F184050575E69A2DFDB57EA6FE0F668E /* Alamofire */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		2BCD82FF5A0B4AEF49ABD2328AFBBB72 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				600D59FC9D161052EC47BDFF794D8B95 /* Alamofire.modulemap */,
+				C7F85CD4A453995404A3B592E0D8673C /* Alamofire.xcconfig */,
+				4BCA2FE7AFFED8DBB95322839EF5F5A1 /* Alamofire-Private.xcconfig */,
+				913599AEFFE01A6847CBA578456B34AA /* Alamofire-dummy.m */,
+				C1F422624B218EC51EA46240D1F1077E /* Alamofire-prefix.pch */,
+				0387D7074091ECBB1F77EDC011127E51 /* Alamofire-umbrella.h */,
+				88029B8BF7451151D8B9A569016A27CC /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Alamofire";
+			sourceTree = "<group>";
+		};
+		2DE38D0042FBDF331688F966D48175DC /* Pods-lasinggeroTests */ = {
+			isa = PBXGroup;
+			children = (
+				FDBF3F3AE4B6796B230E920D4463EBF4 /* Info.plist */,
+				235A4F35AFF94B07389263E16FF4BA2B /* Pods-lasinggeroTests.modulemap */,
+				B31690DEA481D6D8D7B4B158F79EF692 /* Pods-lasinggeroTests-acknowledgements.markdown */,
+				0448EE4C443344F5B7D4764A9B8DA98B /* Pods-lasinggeroTests-acknowledgements.plist */,
+				93316D24044036647C53E1FC67DCACE6 /* Pods-lasinggeroTests-dummy.m */,
+				24096B0AFDC3A74C2BD1C8432EF03BBA /* Pods-lasinggeroTests-frameworks.sh */,
+				1269860EBF23A03CD4B38CBB8932ED4D /* Pods-lasinggeroTests-resources.sh */,
+				5621CF2F9B253B81878982E35A4361E6 /* Pods-lasinggeroTests-umbrella.h */,
+				9E025B1E85A334F873CC8ADDB9D344C0 /* Pods-lasinggeroTests.debug.xcconfig */,
+				B8806FBC6E47A7D20CFCBFBAD9378CFB /* Pods-lasinggeroTests.release.xcconfig */,
+			);
+			name = "Pods-lasinggeroTests";
+			path = "Target Support Files/Pods-lasinggeroTests";
+			sourceTree = "<group>";
+		};
+		3750B279B12A8556E355B7164023950D /* Pods-lasinggero */ = {
+			isa = PBXGroup;
+			children = (
+				3FCF5078C71E2D1202EF62E8F0888140 /* Info.plist */,
+				1E6E21DE5D84A3021412BBD509510E1E /* Pods-lasinggero.modulemap */,
+				2B8199E7A1D14611744328332505F69C /* Pods-lasinggero-acknowledgements.markdown */,
+				7917ACE976DAA09E8AA245AE8474F06B /* Pods-lasinggero-acknowledgements.plist */,
+				B841555C592DBB8B01D986BA2656A4A0 /* Pods-lasinggero-dummy.m */,
+				C8A0D576D6AE75E79B02E624E98B05EC /* Pods-lasinggero-frameworks.sh */,
+				43BFB47840DBE4DCCD76D42ED6433DA8 /* Pods-lasinggero-resources.sh */,
+				063E138D34B2754D791C17F66A604259 /* Pods-lasinggero-umbrella.h */,
+				D157DB07E7E9290AA80696DC9BF79061 /* Pods-lasinggero.debug.xcconfig */,
+				CCA80A788FCD39C30393B7D7B0DC0438 /* Pods-lasinggero.release.xcconfig */,
+			);
+			name = "Pods-lasinggero";
+			path = "Target Support Files/Pods-lasinggero";
+			sourceTree = "<group>";
+		};
+		53F661C0CA7190D2CF05023FB33D61E4 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				E97C3492F2EA26AE37142E54B6386989 /* Foundation.framework */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
-				0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				20C396BA1B90EEE39D4B19FE012C4F6D /* Pods */,
 				CCA510CFBEA2D207524CDA0D73C3B561 /* Products */,
-				F6CCA5D896907CE7506C37FD31FC265A /* Targets Support Files */,
+				A6A03AD9701921D6D9C5011DBCD61D77 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		A6A03AD9701921D6D9C5011DBCD61D77 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A794D5388DAF0FA35E6D2E4176C35C36 /* Pods */,
+				3750B279B12A8556E355B7164023950D /* Pods-lasinggero */,
+				2DE38D0042FBDF331688F966D48175DC /* Pods-lasinggeroTests */,
+				15DF9869C403D50600A190F63E6A4E3F /* Pods-lasinggeroUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		A794D5388DAF0FA35E6D2E4176C35C36 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5B1C17A7C914BBA5A8FE694AA5768E92 /* Info.plist */,
+				70F6B49B392097FA58669F5F730B96E0 /* Pods.modulemap */,
+				E61E13E6D32F5DC58B019AA9B4798006 /* Pods-acknowledgements.markdown */,
+				4D64B898A6BF75BB814ACC1BBA265636 /* Pods-acknowledgements.plist */,
+				8E9A534EF6E528FC8EE446BCF68E20D6 /* Pods-dummy.m */,
+				D3241E940B21C722BFC39B78B99AC42D /* Pods-frameworks.sh */,
+				D66F9047532B4A590E57FFF50AFFD2C3 /* Pods-resources.sh */,
+				2E168626150052F57CB6B63DE7373444 /* Pods-umbrella.h */,
+				2DD70417B32A18A9B4C0861619F5037E /* Pods.debug.xcconfig */,
+				782DBEEEA64894EEE3980B5FA9BDECAB /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			path = "Target Support Files/Pods";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				53F661C0CA7190D2CF05023FB33D61E4 /* iOS */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		CCA510CFBEA2D207524CDA0D73C3B561 /* Products */ = {
 			isa = PBXGroup;
 			children = (
+				F59C6B5D0B92D064A2C555B81A9A4031 /* Alamofire.framework */,
+				373DBC28A07E884DDCFA358AF7328E27 /* Pods.framework */,
+				F4EC11768DC53285CEFC4495D1776E48 /* Pods_lasinggero.framework */,
+				A906221524D8FAA1401F7873078B6D3B /* Pods_lasinggeroTests.framework */,
+				7083D5E8E179844F65757E7345115165 /* Pods_lasinggeroUITests.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F6CCA5D896907CE7506C37FD31FC265A /* Targets Support Files */ = {
+		F184050575E69A2DFDB57EA6FE0F668E /* Alamofire */ = {
 			isa = PBXGroup;
 			children = (
+				BA33C7279936BE7DFF4698581EBCE8BF /* Alamofire.swift */,
+				6AC583B566048A1C6CA72F846B433904 /* Download.swift */,
+				01067D6C22061BD428A97C5F5FBD5D81 /* Error.swift */,
+				7AFE740DC52ACC2680CB6F97D6CB8FA4 /* Manager.swift */,
+				98FD4DB8EF63C212CB004BB742CACD13 /* MultipartFormData.swift */,
+				308579A47369157BBA9893BC39CC7A52 /* ParameterEncoding.swift */,
+				A484CB3CE2AE906D29B6314039C8906F /* Request.swift */,
+				B912E5A35E8F2036A668A56590B84D93 /* Response.swift */,
+				8F998248A6449F8F2FE63D11D60BD22A /* ResponseSerialization.swift */,
+				C7555398D9629F7A31921C51493462B1 /* Result.swift */,
+				47CE2031A3B2714BD9A7E2DB9F9F72B0 /* ServerTrustPolicy.swift */,
+				15B4DC95DAC85F24212A6C0CDEEB972E /* Stream.swift */,
+				8F32ECEB058E792C68B81221465C299E /* Upload.swift */,
+				A810AE181C28AAEBBE3DF0C6C71A7F06 /* Validation.swift */,
+				2BCD82FF5A0B4AEF49ABD2328AFBBB72 /* Support Files */,
 			);
-			name = "Targets Support Files";
+			path = Alamofire;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		490FEF6E6944D66003F0869F55D2DB41 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6B6E58B67D1D1D4A7CB8FEB4EB30722 /* Pods-lasinggeroUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79074579FE3DD402C8395A257B5FA2CF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17B0CF9E3641375AC482BD68E00FC9F1 /* Pods-lasinggeroTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83B52C3BCAB8619945BF236054693C72 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49F2672FF450B6AE585A2B740F9D2B98 /* Pods-lasinggero-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E97C743A86E0542B647E5A4EB7CDF84 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E89457B364D2940DD87D83EDCC5CA4F /* Pods-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE1DA7514F706B13AE91C7EC604AB12A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F90FE2EB836C2B4C1E5B174939CD179 /* Alamofire-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		20EBF98412F964FB592C1F8A5EB9CA5D /* Pods-lasinggeroTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 37D5EEAD327A3A79F419E1FD5CB7D14C /* Build configuration list for PBXNativeTarget "Pods-lasinggeroTests" */;
+			buildPhases = (
+				6CF8709B1FC9DB9BB6B94404E2F8AD50 /* Sources */,
+				0BD8B6A8CC188DF934A5BEAA8EC99D87 /* Frameworks */,
+				79074579FE3DD402C8395A257B5FA2CF /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CB9D2B9C09C56CB5048717AD37263D89 /* PBXTargetDependency */,
+			);
+			name = "Pods-lasinggeroTests";
+			productName = "Pods-lasinggeroTests";
+			productReference = A906221524D8FAA1401F7873078B6D3B /* Pods_lasinggeroTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AB3475117070B80274D01FE062B4C0AA /* Pods-lasinggeroUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55330B24C809178451EFF5781AB03AB6 /* Build configuration list for PBXNativeTarget "Pods-lasinggeroUITests" */;
+			buildPhases = (
+				9937621881B573515ABA2664797F3E0E /* Sources */,
+				4443EC7F149225B890CC52BAA5D41FF0 /* Frameworks */,
+				490FEF6E6944D66003F0869F55D2DB41 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				71E7895004A1E493E9EBDA6FAE6616F4 /* PBXTargetDependency */,
+			);
+			name = "Pods-lasinggeroUITests";
+			productName = "Pods-lasinggeroUITests";
+			productReference = 7083D5E8E179844F65757E7345115165 /* Pods_lasinggeroUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E95AAC1E5BE8CDDE1938C0835D880516 /* Alamofire */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A486E78AA532D54C75DB225B6CDF7D5D /* Build configuration list for PBXNativeTarget "Alamofire" */;
+			buildPhases = (
+				FFFB06D24E37D3536D980CD2B53CF085 /* Sources */,
+				9993769FEA8B878853AA5F4E8EE86970 /* Frameworks */,
+				BE1DA7514F706B13AE91C7EC604AB12A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Alamofire;
+			productName = Alamofire;
+			productReference = F59C6B5D0B92D064A2C555B81A9A4031 /* Alamofire.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E9AD967CAA74F482799165449970707E /* Pods */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 617B84E60136B0EEFB9DCE03563C6A98 /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildPhases = (
+				55E1084FCA6700999A455E384E76C906 /* Sources */,
+				95E8776D2E66DFC0A14F1CC4BEBF4AFE /* Frameworks */,
+				9E97C743A86E0542B647E5A4EB7CDF84 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				205BC623DF2816BA65827CC32370200D /* PBXTargetDependency */,
+			);
+			name = Pods;
+			productName = Pods;
+			productReference = 373DBC28A07E884DDCFA358AF7328E27 /* Pods.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FBE7E3631ED1798B142345AAA615DF1F /* Pods-lasinggero */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E67CA633E79AAB72F764E580E0C668C /* Build configuration list for PBXNativeTarget "Pods-lasinggero" */;
+			buildPhases = (
+				E77582FAF6665C48D93744C47E6D68D0 /* Sources */,
+				D48067F0F24107BD590C7D83FFC5A092 /* Frameworks */,
+				83B52C3BCAB8619945BF236054693C72 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2A77D4E6D4562A5D8269235BC7CA9D11 /* PBXTargetDependency */,
+			);
+			name = "Pods-lasinggero";
+			productName = "Pods-lasinggero";
+			productReference = F4EC11768DC53285CEFC4495D1776E48 /* Pods_lasinggero.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
@@ -63,12 +507,131 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				E95AAC1E5BE8CDDE1938C0835D880516 /* Alamofire */,
+				E9AD967CAA74F482799165449970707E /* Pods */,
+				FBE7E3631ED1798B142345AAA615DF1F /* Pods-lasinggero */,
+				20EBF98412F964FB592C1F8A5EB9CA5D /* Pods-lasinggeroTests */,
+				AB3475117070B80274D01FE062B4C0AA /* Pods-lasinggeroUITests */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXSourcesBuildPhase section */
+		55E1084FCA6700999A455E384E76C906 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B16A686D1BA13E410CCB9CE13EF4A5A3 /* Pods-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CF8709B1FC9DB9BB6B94404E2F8AD50 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B26C78A4A736EFDD5EC57E64BBCE0C24 /* Pods-lasinggeroTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9937621881B573515ABA2664797F3E0E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83CBDF96B5F99399E6B4C5965D1A76C5 /* Pods-lasinggeroUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E77582FAF6665C48D93744C47E6D68D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B8B1E0972337D202D42029555895148 /* Pods-lasinggero-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFFB06D24E37D3536D980CD2B53CF085 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30A5E36C56AA2217F6F0B865F13B8D36 /* Alamofire-dummy.m in Sources */,
+				C76391A512837D71828E56D8313CF7D4 /* Alamofire.swift in Sources */,
+				1ED391C8D1E5E1954CE297F0AA553B33 /* Download.swift in Sources */,
+				324BA5646771B82525952A6DB0F5FA6E /* Error.swift in Sources */,
+				F4C95DD3615CFE23496F80897321F929 /* Manager.swift in Sources */,
+				2ECA5D631AA5DBC48F7502B00BE82491 /* MultipartFormData.swift in Sources */,
+				C23B2CA2809B1A2E2121A3DC4565733B /* ParameterEncoding.swift in Sources */,
+				D388D6BEA714D6740C8622AAFCEDB203 /* Request.swift in Sources */,
+				714F5BACF7734738BBB9940D30108A36 /* Response.swift in Sources */,
+				10B42059BD811539813DC2134C80D362 /* ResponseSerialization.swift in Sources */,
+				C0729DDD115083F754E2E51ECAE3A662 /* Result.swift in Sources */,
+				8EA972AF9758DAB27B8E4B5E7EFDCCDE /* ServerTrustPolicy.swift in Sources */,
+				99F4CF3AD233592328A79B9139EC8BD5 /* Stream.swift in Sources */,
+				891FFAD94E13F6990D6AC6C163EBE55D /* Upload.swift in Sources */,
+				5FBF6EC70B0546266C681C64EA238E97 /* Validation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		205BC623DF2816BA65827CC32370200D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			target = E95AAC1E5BE8CDDE1938C0835D880516 /* Alamofire */;
+			targetProxy = 5C2328817C4B0666CEFDC540810EF432 /* PBXContainerItemProxy */;
+		};
+		2A77D4E6D4562A5D8269235BC7CA9D11 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			target = E95AAC1E5BE8CDDE1938C0835D880516 /* Alamofire */;
+			targetProxy = 870C0663CADD02A17C1E7EB4B22A5476 /* PBXContainerItemProxy */;
+		};
+		71E7895004A1E493E9EBDA6FAE6616F4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			target = E95AAC1E5BE8CDDE1938C0835D880516 /* Alamofire */;
+			targetProxy = 8EA931B6143CD12563F3E8D5D3C059F4 /* PBXContainerItemProxy */;
+		};
+		CB9D2B9C09C56CB5048717AD37263D89 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			target = E95AAC1E5BE8CDDE1938C0835D880516 /* Alamofire */;
+			targetProxy = 7C3C463A4DF04848067873DFE4B78C76 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
-		5CE5176205D06FF3FFE3DDDA9291E44B /* Debug */ = {
+		7FD6CD6EF2A6091D46644C1D928C3B84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DD70417B32A18A9B4C0861619F5037E /* Pods.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods/Pods.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A70CDAD61F90AC503C7D04CC22DA2923 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -100,14 +663,275 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		74857149DC1E0D599B8A01A78349A926 /* Release */ = {
+		ABBF13D6C5BE747A880EEF441DE12DF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ECD8F7B65E5DE6614DCE912E7FF55F4D /* Pods-lasinggeroUITests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-lasinggeroUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-lasinggeroUITests/Pods-lasinggeroUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_lasinggeroUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B29AFF240D80705C0BDA4BF026C77D5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8806FBC6E47A7D20CFCBFBAD9378CFB /* Pods-lasinggeroTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-lasinggeroTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-lasinggeroTests/Pods-lasinggeroTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_lasinggeroTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B9DC8A8F4D0EA2E0D3379407BFCDAAD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53014C0B2AAAF33BF964C197C5A3E799 /* Pods-lasinggeroUITests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-lasinggeroUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-lasinggeroUITests/Pods-lasinggeroUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_lasinggeroUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BFCDFCD0432AC44FDC1F574E8CA2DB40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BCA2FE7AFFED8DBB95322839EF5F5A1 /* Alamofire-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 3.0.1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 3;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CA46CF6C5DA63AEEDA6F942293F665D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D157DB07E7E9290AA80696DC9BF79061 /* Pods-lasinggero.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-lasinggero/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-lasinggero/Pods-lasinggero.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_lasinggero;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D2827857AB7C9FBBCE7DA477B087D57B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 782DBEEEA64894EEE3980B5FA9BDECAB /* Pods.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods/Pods.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D4F68E9A4B7D397288B644AA66B4B5E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BCA2FE7AFFED8DBB95322839EF5F5A1 /* Alamofire-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 3.0.1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 3;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E5B802140D065C569A087431EC9E0CE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCA80A788FCD39C30393B7D7B0DC0438 /* Pods-lasinggero.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-lasinggero/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-lasinggero/Pods-lasinggero.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_lasinggero;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F1185D4DEA8052652A1874A9AE2F49F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E025B1E85A334F873CC8ADDB9D344C0 /* Pods-lasinggeroTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-lasinggeroTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-lasinggeroTests/Pods-lasinggeroTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_lasinggeroTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FB45FFD90572718D82AB9092B750F0CA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -134,7 +958,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
 				VALIDATE_PRODUCT = YES;
@@ -147,8 +971,53 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5CE5176205D06FF3FFE3DDDA9291E44B /* Debug */,
-				74857149DC1E0D599B8A01A78349A926 /* Release */,
+				A70CDAD61F90AC503C7D04CC22DA2923 /* Debug */,
+				FB45FFD90572718D82AB9092B750F0CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		37D5EEAD327A3A79F419E1FD5CB7D14C /* Build configuration list for PBXNativeTarget "Pods-lasinggeroTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1185D4DEA8052652A1874A9AE2F49F9 /* Debug */,
+				B29AFF240D80705C0BDA4BF026C77D5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55330B24C809178451EFF5781AB03AB6 /* Build configuration list for PBXNativeTarget "Pods-lasinggeroUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9DC8A8F4D0EA2E0D3379407BFCDAAD6 /* Debug */,
+				ABBF13D6C5BE747A880EEF441DE12DF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5E67CA633E79AAB72F764E580E0C668C /* Build configuration list for PBXNativeTarget "Pods-lasinggero" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA46CF6C5DA63AEEDA6F942293F665D1 /* Debug */,
+				E5B802140D065C569A087431EC9E0CE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		617B84E60136B0EEFB9DCE03563C6A98 /* Build configuration list for PBXNativeTarget "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7FD6CD6EF2A6091D46644C1D928C3B84 /* Debug */,
+				D2827857AB7C9FBBCE7DA477B087D57B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A486E78AA532D54C75DB225B6CDF7D5D /* Build configuration list for PBXNativeTarget "Alamofire" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4F68E9A4B7D397288B644AA66B4B5E4 /* Debug */,
+				BFCDFCD0432AC44FDC1F574E8CA2DB40 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

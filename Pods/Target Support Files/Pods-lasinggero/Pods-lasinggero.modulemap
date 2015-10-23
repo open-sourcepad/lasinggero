@@ -1,0 +1,6 @@
+framework module Pods_lasinggero {
+  umbrella header "Pods-lasinggero-umbrella.h"
+
+  export *
+  module * { export * }
+}

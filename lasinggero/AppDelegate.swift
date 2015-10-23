@@ -12,10 +12,20 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var currentUser: User!
+    
+    
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+       
+        let userDefault = NSUserDefaults.standardUserDefaults()
+        if (userDefault.objectForKey("currentUser") != nil) {
+            currentUser = userDefault.objectForKey("currentUser") as! User
+            goToLandingScreen()
+        } else {
+            goToLogIn()
+        }
         return true
     }
 
@@ -40,6 +50,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
+    
+    func goToLogIn() {
+        let storyboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        var rootViewController:UIViewController!
+        rootViewController = storyboard.instantiateViewControllerWithIdentifier("logView") as UIViewController
+        window?.rootViewController = rootViewController        
+    }
+    
+    func goToLandingScreen() {
+        let storyboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        var rootViewController:UIViewController!
+        rootViewController = storyboard.instantiateViewControllerWithIdentifier("benchmarkView") as UIViewController
+        window?.rootViewController = rootViewController
+    }
+    
 
 
 }

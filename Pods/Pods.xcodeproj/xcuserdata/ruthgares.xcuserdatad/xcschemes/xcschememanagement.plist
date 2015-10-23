@@ -3,8 +3,60 @@
 <plist version="1.0">
 <dict>
 	<key>SchemeUserState</key>
-	<dict/>
+	<dict>
+		<key>Alamofire.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-lasinggero.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-lasinggeroTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-lasinggeroUITests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
 	<key>SuppressBuildableAutocreation</key>
-	<dict/>
+	<dict>
+		<key>20EBF98412F964FB592C1F8A5EB9CA5D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>AB3475117070B80274D01FE062B4C0AA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E95AAC1E5BE8CDDE1938C0835D880516</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E9AD967CAA74F482799165449970707E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FBE7E3631ED1798B142345AAA615DF1F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
 </dict>
 </plist>
