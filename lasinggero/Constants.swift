@@ -27,7 +27,8 @@ let SCREEN_CENTER_Y:CGFloat         =        SCREEN_HEIGHT / 2
 let API_BASE_URL  =  "https://lasinggero.herokuapp.com/"
 let SIGN_UP_URL = "https://lasinggero.herokuapp.com/api/users/sign_up"
 let BENCHMARK_API = "https://lasinggero.herokuapp.com/api/drink_benchmarks"
-
+let OCCASSION_API = "https://lasinggero.herokuapp.com/api/occasions"
+let DRINK_API = "https://lasinggero.herokuapp.com/api/occasion/:id/occasion_drink"
 
 let DEVICE_ID = UIDevice.currentDevice().identifierForVendor!.UUIDString
 

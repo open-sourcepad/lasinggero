@@ -62,6 +62,8 @@ class BenchmarkViewController: UIViewController, UITableViewDataSource, UITableV
                         drinkCat.drinkServingType = drink["serving_type"] as! String
                         drinkCat.drinkSize = drink["serving"] as! Double
                         self.drinks.addObject(drinkCat)
+                        AppDelegate().drinksItems.addObject(drinkCat)
+
                     }
                 }
                 self.drinksTable.reloadData()
@@ -99,6 +101,12 @@ class BenchmarkViewController: UIViewController, UITableViewDataSource, UITableV
         Alamofire.Manager.sharedInstance.request(.POST, BENCHMARK_API, parameters: params)
             .responseJSON {response in
                 debugPrint(response)
+                if response.result.error == nil {
+                    let storyboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                    let occassionTable = storyboard.instantiateViewControllerWithIdentifier("occassionTable") as! OccassionTableViewController
+                    let navController = UINavigationController(rootViewController: occassionTable)
+                    self.presentViewController(navController, animated: true, completion: nil)
+                }
         }
     }
 
