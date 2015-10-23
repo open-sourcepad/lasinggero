@@ -11,6 +11,7 @@ import Alamofire
 
 class TrackViewController: UIViewController {
 
+    @IBOutlet weak var servingTypeLabel: UILabel!
     @IBOutlet weak var shotsLabel: UILabel!
     @IBOutlet weak var drinkLabel: UILabel!
     
@@ -33,6 +34,8 @@ class TrackViewController: UIViewController {
         navigationItem.title = occassion.occTitle
         drinkLabel.text = currDrink.drinkName
         shotsLabel.text = String(occassion.servingsLeft)
+        let shotType = currDrink.drinkServingType != "" ? currDrink.drinkServingType.uppercaseString :  "SHOTS"
+        servingTypeLabel.text = "\(shotType) LEFT"
         updateProgressBar()
     }
 
