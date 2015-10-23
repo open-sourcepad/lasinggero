@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "51956FA877C6B6B5246DD600"
+               BlueprintIdentifier = "1530267A40CBF3F394EAFA93"
                BuildableName = "Pods_lasinggeroUITests.framework"
                BlueprintName = "Pods-lasinggeroUITests"
                ReferencedContainer = "container:Pods.xcodeproj">

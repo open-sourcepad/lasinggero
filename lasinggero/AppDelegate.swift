@@ -7,13 +7,15 @@
 //
 
 import UIKit
+import Alamofire
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     var currentUser: User!
-    
+    var drinksItems:NSMutableArray = []
+    var currOccassion: Occassion!
     
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
@@ -21,6 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
        
         let userDefault = NSUserDefaults.standardUserDefaults()
         if (userDefault.objectForKey("authToken") != nil) {
+            populateList()
             goToLandingScreen()
         } else {
             goToLogIn()
@@ -60,11 +63,36 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func goToLandingScreen() {
         let storyboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         var rootViewController:UIViewController!
-        rootViewController = storyboard.instantiateViewControllerWithIdentifier("benchmarkView") as UIViewController
-        window?.rootViewController = rootViewController
+        rootViewController = storyboard.instantiateViewControllerWithIdentifier("occassionTable") as UIViewController
+        let navController = UINavigationController(rootViewController: rootViewController)
+        window?.rootViewController = navController
     }
     
+    func populateList() {
+        let manager = Alamofire.Manager.sharedInstance
+        let authToken = NSUserDefaults.standardUserDefaults().objectForKey("authToken") as! String
+        let params = ["authentication_token": "\(authToken)"]
+        manager.request(.GET, BENCHMARK_API, parameters: params)
+            .responseJSON { response in
+                debugPrint(response)
+                if response.result.error == nil {
+                    self.drinksItems = []
+                    debugPrint(response.result.value)
+                    let data = response.result.value as! NSDictionary
+                    let drinksData = data["drinks"] as! NSArray
+                    for drinkVar in drinksData{
+                        let drink = drinkVar as! NSDictionary
+                        let drinkCat = Drink()
+                        drinkCat.drinkId = drink.objectForKey("id") as! Int
+                        drinkCat.drinkName = drink["name"] as! String
+                        drinkCat.drinkCount = 0
+                        drinkCat.drinkServingType = drink["serving_type"] as! String
+                        drinkCat.drinkSize = drink["serving"] as! Double
+                        self.drinksItems.addObject(drinkCat)
+                    }
+                }
+        }
+    }
 
 
 }
-

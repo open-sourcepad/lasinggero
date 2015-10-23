@@ -60,15 +60,44 @@ class ViewController: UIViewController {
     
     
     @IBAction func signInUser(sender: AnyObject) {
+        guard validateSign() else { return }
+        let params = [ "user": ["email": "\(emailFld.text!)",
+            "password":  "\(passwordFld.text!)","device_token":  "\(DEVICE_ID)"]]
         
+        let manager = Alamofire.Manager.sharedInstance
+        manager.request(.POST, "https://lasinggero.herokuapp.com/api/users/sign_in", parameters: params)
+            .responseJSON { response in
+                if (response.result.error != nil) {
+                    
+                } else {
+                    debugPrint(response)
+                    let userData = response.result.value as! NSDictionary
+                    let errorData = userData.objectForKey("error") as? String
+                    if errorData != nil {
+                        self.alertShow(errorData!)
+                    } else {
+                        let mainData = userData.objectForKey("data") as! NSDictionary
+                        let user = User()
+                        user.authToken = mainData.objectForKey("authentication_token") as! String
+                        user.name = mainData.objectForKey("name") as! String
+                        user.email = mainData.objectForKey("email") as! String
+                        NSUserDefaults.standardUserDefaults().setObject(user.authToken, forKey: "authToken")
+                        let storyboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                        var rootViewController:UIViewController!
+                        rootViewController = storyboard.instantiateViewControllerWithIdentifier("benchmarkView") as UIViewController
+                        let navController  = UINavigationController(rootViewController: rootViewController)
+                        self.presentViewController(navController, animated: true, completion: nil)
+                    }
+                }
+        }
     }
     
     @IBAction func signUpUser(sender: AnyObject) {
         guard validFields() else { return }
         
-        let params = [ "user": ["name": "\(nameFld.text)",
-            "email":  "\(signUpEmailFld.text)",
-            "password":  "\(signUpPasswordFld.text)",
+        let params = [ "user": ["name": "\(nameFld.text!)",
+            "email":  "\(signUpEmailFld.text!)",
+            "password":  "\(signUpPasswordFld.text!)",
             "device_token":  "\(DEVICE_ID)"]]
         
         let manager = Alamofire.Manager.sharedInstance
@@ -80,20 +109,31 @@ class ViewController: UIViewController {
                 } else {
                     debugPrint(response)
                     let userData = response.result.value as! NSDictionary
-                    let mainData = userData.objectForKey("data") as! NSDictionary
-                    let user = User()
-                    user.authToken = mainData.objectForKey("authentication_token") as! String
-                    user.name = mainData.objectForKey("name") as! String
-                    user.email = mainData.objectForKey("email") as! String
-                    NSUserDefaults.standardUserDefaults().setObject(user.authToken, forKey: "authToken")
-                    let storyboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-                    var rootViewController:UIViewController!
-                    rootViewController = storyboard.instantiateViewControllerWithIdentifier("benchmarkView") as UIViewController
-                    let navController  = UINavigationController(rootViewController: rootViewController)
-                    self.presentViewController(navController, animated: true, completion: nil)
+                    let errorData = userData.objectForKey("errors") as? NSArray
+                    if errorData == nil {
+                        let mainData = userData.objectForKey("data") as! NSDictionary
+                        let user = User()
+                        user.authToken = mainData.objectForKey("authentication_token") as! String
+                        user.name = mainData.objectForKey("name") as! String
+                        user.email = mainData.objectForKey("email") as! String
+                        NSUserDefaults.standardUserDefaults().setObject(user.authToken, forKey: "authToken")
+                        let storyboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                        var rootViewController:UIViewController!
+                        rootViewController = storyboard.instantiateViewControllerWithIdentifier("benchmarkView") as UIViewController
+                        let navController  = UINavigationController(rootViewController: rootViewController)
+                        self.presentViewController(navController, animated: true, completion: nil)
+                    } else {
+                        self.alertShow(errorData!.componentsJoinedByString("\n"))
+                    }
                 }
         }
         
+    }
+    
+    func alertShow(msg: String) {
+        let alert = UIAlertController(title: "Validation Error", message: msg, preferredStyle: .Alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: .Default, handler: nil))
+        presentViewController(alert, animated: true, completion: nil)
     }
 
     @IBAction func showSignIn(sender: AnyObject) {
@@ -104,6 +144,16 @@ class ViewController: UIViewController {
     @IBAction func showSignUp(sender: AnyObject) {
         signUpView.hidden = false
         signInView.hidden = true
+    }
+    
+    func validateSign() -> Bool {
+        if emailFld.text == "" || passwordFld.text == "" {
+            let alert = UIAlertController(title: "Error", message: "Fill out required fields", preferredStyle: .Alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+            presentViewController(alert, animated: true, completion: nil)
+            return false
+        }
+        return true
     }
     
     func validFields() -> Bool {
