@@ -24,6 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UINavigationBar.appearance().tintColor = UIColor.whiteColor()
         UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName : UIColor.whiteColor()]
         
+        UILabel.appearance().substituteFontName = "Avenir"
         let userDefault = NSUserDefaults.standardUserDefaults()
         if (userDefault.objectForKey("authToken") != nil) {
             populateList()
