@@ -20,31 +20,46 @@ class BenchMark: UIView {
     var drink = Drink()
     var drinkLabel: UILabel!
     var drinkCount: UITextField!
-    var customStepper: UIStepper!
+    var addBtn: UIButton!
+    var minusBtn: UIButton!
     
      override init(frame: CGRect) {
         super.init(frame: frame)
         
-        drinkLabel = UILabel(frame: CGRect(x: 0, y: 0, width: SCREEN_CENTER_X - 50, height: 60.0))
-        drinkCount = UITextField(frame: CGRect(x: SCREEN_CENTER_X + 30, y: 0, width: SCREEN_CENTER_X - 50, height: 60.0))
         
-        customStepper = UIStepper (frame:CGRectMake(0, 70, 0, 0))
-        customStepper.wraps = true
-        customStepper.autorepeat = true
-        customStepper.minimumValue = 0
-        customStepper.addTarget(self, action: "stepperValueChanged:", forControlEvents: .ValueChanged)
-        self.addSubview(customStepper)
     }
     
-    func stepperValueChanged(sender:UIStepper!) {
-        drinkCount.text = String(sender.value)
+    func addBtnClicked() {
+        drinkCount.text = String(Int(drinkCount.text!)! + 1)
+    }
+    
+    func minusBtnClicked() {
+        drinkCount.text = String(Int(drinkCount.text!)! - 1)
     }
     
     func setCurrentDrink(currentDrink: Drink) {
         drink = currentDrink
-        customStepper.value = drink.drinkCount
-        drinkLabel.text = drink.drinkName
+        let stepBtnWidth:CGFloat = 30.0
+        minusBtn = UIButton(frame: CGRect(x: SCREEN_WIDTH - CGFloat(5.0) - stepBtnWidth, y: 0, width: stepBtnWidth, height: stepBtnWidth))
+        minusBtn.setTitle("-", forState: .Normal)
+        minusBtn.addTarget(self, action: "minusBtnClicked", forControlEvents: .TouchUpInside)
+        minusBtn.backgroundColor = UIColor.blackColor()
+        minusBtn.userInteractionEnabled = true
+        drinkLabel = UILabel(frame: CGRect(x: 0, y: 0, width: SCREEN_CENTER_X - 50, height: 60.0))
+        drinkCount = UITextField(frame: CGRect(x: minusBtn.frame.origin.x - minusBtn.frame.size.width, y: 0, width: SCREEN_CENTER_X - 50, height: 60.0))
+        addBtn = UIButton(frame: CGRect(x: drinkCount.frame.origin.x - drinkCount.frame.size.width , y: 0, width: stepBtnWidth, height: stepBtnWidth))
+        addBtn.setTitle("+", forState: .Normal)
+        addBtn.userInteractionEnabled = true
+        addBtn.addTarget(self, action: "addBtnClicked", forControlEvents: .TouchUpInside)
+        addBtn.backgroundColor = UIColor.blackColor()
+        drinkLabel.text = "\(drink.drinkName) - \(drink.drinkServingType) - \(drink.drinkSize)"
         drinkCount.text = String(drink.drinkCount)
+        
+        self.addSubview(drinkLabel)
+        self.addSubview(minusBtn)
+        self.addSubview(drinkCount)
+        self.addSubview(addBtn)
+        
     }
     
      required init?(coder aDecoder: NSCoder) {

@@ -85,7 +85,7 @@ class ViewController: UIViewController {
                     user.authToken = mainData.objectForKey("authentication_token") as! String
                     user.name = mainData.objectForKey("name") as! String
                     user.email = mainData.objectForKey("email") as! String
-                    AppDelegate().currentUser = user
+                    NSUserDefaults.standardUserDefaults().setObject(user.authToken, forKey: "authToken")
                     let storyboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
                     var rootViewController:UIViewController!
                     rootViewController = storyboard.instantiateViewControllerWithIdentifier("benchmarkView") as UIViewController

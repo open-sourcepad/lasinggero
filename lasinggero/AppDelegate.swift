@@ -20,8 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
        
         let userDefault = NSUserDefaults.standardUserDefaults()
-        if (userDefault.objectForKey("currentUser") != nil) {
-            currentUser = userDefault.objectForKey("currentUser") as! User
+        if (userDefault.objectForKey("authToken") != nil) {
             goToLandingScreen()
         } else {
             goToLogIn()
