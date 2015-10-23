@@ -21,6 +21,7 @@
 		4A1DD3BA1BDA4428001D7D4E /* BenchMark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1DD3B91BDA4428001D7D4E /* BenchMark.swift */; settings = {ASSET_TAGS = (); }; };
 		4A1DD3BC1BDA450E001D7D4E /* Drink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1DD3BB1BDA450E001D7D4E /* Drink.swift */; settings = {ASSET_TAGS = (); }; };
 		4A1DD3BE1BDA5BD7001D7D4E /* DrinkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1DD3BD1BDA5BD6001D7D4E /* DrinkTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
+		C639EB621BDABE07006226E0 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = C639EB611BDABE07006226E0 /* Font.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		4A1DD3BB1BDA450E001D7D4E /* Drink.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Drink.swift; sourceTree = "<group>"; };
 		4A1DD3BD1BDA5BD6001D7D4E /* DrinkTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrinkTableViewCell.swift; sourceTree = "<group>"; };
 		6BB88B89969B2A6D4D1562D9 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C639EB611BDABE07006226E0 /* Font.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
 		D4644F253808FED264B616F8 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -160,6 +162,7 @@
 		4A1DD3AA1BD9FE54001D7D4E /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				C639EB611BDABE07006226E0 /* Font.swift */,
 			);
 			name = Extension;
 			sourceTree = "<group>";
@@ -385,6 +388,7 @@
 				4A1DD3771BD9F476001D7D4E /* AppDelegate.swift in Sources */,
 				4A1DD3B01BDA1200001D7D4E /* BenchmarkViewController.swift in Sources */,
 				4A1DD3B71BDA230E001D7D4E /* User.swift in Sources */,
+				C639EB621BDABE07006226E0 /* Font.swift in Sources */,
 				4A1DD3BC1BDA450E001D7D4E /* Drink.swift in Sources */,
 				4A1DD3BE1BDA5BD7001D7D4E /* DrinkTableViewCell.swift in Sources */,
 				4A1DD3A61BD9F706001D7D4E /* Constants.swift in Sources */,
