@@ -25,22 +25,44 @@
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="96Y-Zg-gvJ">
                                         <rect key="frame" x="49" y="8" width="527" height="30"/>
                                         <animations/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <variation key="widthClass=compact" misplaced="YES">
+                                            <rect key="frame" x="24" y="8" width="352" height="30"/>
+                                        </variation>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0ca-py-N0X">
                                         <rect key="frame" x="49" y="56" width="527" height="30"/>
                                         <animations/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                        <variation key="widthClass=compact" misplaced="YES">
+                                            <rect key="frame" x="24" y="56" width="352" height="30"/>
+                                        </variation>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="19R-bE-Lo0">
                                         <rect key="frame" x="265" y="139" width="70" height="30"/>
                                         <animations/>
+                                        <color key="backgroundColor" red="0.5490196078431373" green="0.53333333333333333" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="baa-PR-Oxa"/>
                                             <constraint firstAttribute="width" constant="70" id="tA6-tD-VlY"/>
                                         </constraints>
+                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="Sign In"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="baa-PR-Oxa"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="widthClass=compact" misplaced="YES">
+                                            <rect key="frame" x="24" y="139" width="352" height="30"/>
+                                            <mask key="constraints">
+                                                <include reference="baa-PR-Oxa"/>
+                                                <exclude reference="tA6-tD-VlY"/>
+                                            </mask>
+                                        </variation>
                                         <connections>
                                             <action selector="signInUser:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gHJ-2w-BrX"/>
                                         </connections>
@@ -50,14 +72,39 @@
                                 <color key="backgroundColor" red="0.1137254902" green="0.1137254902" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="0ca-py-N0X" firstAttribute="trailing" secondItem="96Y-Zg-gvJ" secondAttribute="trailing" id="Ag2-sX-NQu"/>
+                                    <constraint firstItem="96Y-Zg-gvJ" firstAttribute="top" secondItem="mkE-vv-I6c" secondAttribute="top" constant="30" id="HtA-eo-bKg"/>
                                     <constraint firstItem="96Y-Zg-gvJ" firstAttribute="leading" secondItem="mkE-vv-I6c" secondAttribute="leading" constant="24" id="Ix2-3g-GKi"/>
+                                    <constraint firstItem="19R-bE-Lo0" firstAttribute="leading" secondItem="mkE-vv-I6c" secondAttribute="leading" constant="24" id="U4W-BJ-pLP"/>
+                                    <constraint firstAttribute="bottom" secondItem="19R-bE-Lo0" secondAttribute="bottom" constant="32" id="WUz-oB-fGt"/>
                                     <constraint firstItem="19R-bE-Lo0" firstAttribute="centerX" secondItem="mkE-vv-I6c" secondAttribute="centerX" id="cRg-fK-9iG"/>
+                                    <constraint firstAttribute="bottom" secondItem="19R-bE-Lo0" secondAttribute="bottom" constant="108" id="iyY-md-DFE"/>
+                                    <constraint firstAttribute="trailing" secondItem="19R-bE-Lo0" secondAttribute="trailing" constant="24" id="lHW-fr-FHR"/>
                                     <constraint firstItem="19R-bE-Lo0" firstAttribute="top" secondItem="0ca-py-N0X" secondAttribute="bottom" constant="53" id="oSF-D0-IGV"/>
                                     <constraint firstItem="0ca-py-N0X" firstAttribute="leading" secondItem="96Y-Zg-gvJ" secondAttribute="leading" id="uM2-5W-ors"/>
                                     <constraint firstItem="96Y-Zg-gvJ" firstAttribute="top" secondItem="mkE-vv-I6c" secondAttribute="topMargin" id="uwW-d2-VJb"/>
                                     <constraint firstItem="0ca-py-N0X" firstAttribute="top" secondItem="96Y-Zg-gvJ" secondAttribute="bottom" constant="18" id="xT3-za-fTM"/>
                                     <constraint firstAttribute="trailing" secondItem="96Y-Zg-gvJ" secondAttribute="trailing" constant="24" id="z8h-GP-qzv"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="HtA-eo-bKg"/>
+                                        <exclude reference="U4W-BJ-pLP"/>
+                                        <exclude reference="WUz-oB-fGt"/>
+                                        <exclude reference="iyY-md-DFE"/>
+                                        <exclude reference="lHW-fr-FHR"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="HtA-eo-bKg"/>
+                                        <exclude reference="uwW-d2-VJb"/>
+                                        <include reference="U4W-BJ-pLP"/>
+                                        <include reference="WUz-oB-fGt"/>
+                                        <exclude reference="iyY-md-DFE"/>
+                                        <include reference="lHW-fr-FHR"/>
+                                        <exclude reference="oSF-D0-IGV"/>
+                                    </mask>
+                                </variation>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cui-Qd-y7M">
                                 <rect key="frame" x="0.0" y="323" width="600" height="277"/>
@@ -98,20 +145,6 @@
                                             <rect key="frame" x="42" y="258" width="327" height="30"/>
                                         </variation>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WhV-nj-LyZ">
-                                        <rect key="frame" x="272" y="228" width="65" height="30"/>
-                                        <animations/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="65" id="LNq-Wc-Q7a"/>
-                                        </constraints>
-                                        <state key="normal" title="Sign Up"/>
-                                        <variation key="widthClass=compact" misplaced="YES">
-                                            <rect key="frame" x="173" y="364" width="65" height="30"/>
-                                        </variation>
-                                        <connections>
-                                            <action selector="signUpUser:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lvh-yo-E7g"/>
-                                        </connections>
-                                    </button>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="blT-EX-1Yz">
                                         <rect key="frame" x="42" y="173" width="527" height="30"/>
                                         <animations/>
@@ -121,12 +154,39 @@
                                             <rect key="frame" x="42" y="296" width="327" height="30"/>
                                         </variation>
                                     </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WhV-nj-LyZ">
+                                        <rect key="frame" x="272" y="228" width="65" height="30"/>
+                                        <animations/>
+                                        <color key="backgroundColor" red="0.54901960780000003" green="0.53333333329999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="65" id="LNq-Wc-Q7a"/>
+                                            <constraint firstAttribute="height" constant="48" id="fny-P6-lJE"/>
+                                        </constraints>
+                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Sign Up"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="fny-P6-lJE"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="widthClass=compact" misplaced="YES">
+                                            <rect key="frame" x="173" y="364" width="65" height="30"/>
+                                            <mask key="constraints">
+                                                <exclude reference="LNq-Wc-Q7a"/>
+                                                <include reference="fny-P6-lJE"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <action selector="signUpUser:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lvh-yo-E7g"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <animations/>
                                 <color key="backgroundColor" red="0.11372549019607843" green="0.11372549019607843" blue="0.14509803921568626" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="vVh-ml-fp7" secondAttribute="trailing" constant="24" id="8Yl-jD-GMq"/>
                                     <constraint firstItem="WhV-nj-LyZ" firstAttribute="centerX" secondItem="Cui-Qd-y7M" secondAttribute="centerX" id="9sb-ME-ZiV"/>
+                                    <constraint firstItem="WhV-nj-LyZ" firstAttribute="leading" secondItem="Cui-Qd-y7M" secondAttribute="leading" constant="24" id="BEN-rf-Afb"/>
                                     <constraint firstItem="WhV-nj-LyZ" firstAttribute="top" secondItem="blT-EX-1Yz" secondAttribute="bottom" constant="25" id="Fu1-2P-WXd"/>
                                     <constraint firstItem="8dX-7g-U3g" firstAttribute="top" secondItem="ZPz-bO-cV4" secondAttribute="bottom" constant="8" id="Gjq-7k-1jr"/>
                                     <constraint firstItem="WhV-nj-LyZ" firstAttribute="centerX" secondItem="Cui-Qd-y7M" secondAttribute="centerX" id="O8I-Ts-pER"/>
@@ -134,36 +194,49 @@
                                     <constraint firstItem="vVh-ml-fp7" firstAttribute="trailing" secondItem="h55-ce-8eL" secondAttribute="trailing" id="PbZ-2i-UDq"/>
                                     <constraint firstItem="h55-ce-8eL" firstAttribute="top" secondItem="vVh-ml-fp7" secondAttribute="bottom" constant="8" symbolic="YES" id="RKd-MW-rku"/>
                                     <constraint firstItem="blT-EX-1Yz" firstAttribute="trailing" secondItem="8dX-7g-U3g" secondAttribute="trailing" id="SDo-qr-LD6"/>
+                                    <constraint firstAttribute="trailing" secondItem="WhV-nj-LyZ" secondAttribute="trailing" constant="24" id="SNJ-dd-mk2"/>
                                     <constraint firstItem="8dX-7g-U3g" firstAttribute="top" secondItem="ZPz-bO-cV4" secondAttribute="bottom" constant="15" id="SQ0-kz-DbY"/>
                                     <constraint firstItem="ZPz-bO-cV4" firstAttribute="trailing" secondItem="h55-ce-8eL" secondAttribute="trailing" id="Wma-Wc-e0m"/>
                                     <constraint firstItem="vVh-ml-fp7" firstAttribute="top" secondItem="Cui-Qd-y7M" secondAttribute="topMargin" id="XmW-s1-wOh"/>
                                     <constraint firstItem="h55-ce-8eL" firstAttribute="leading" secondItem="vVh-ml-fp7" secondAttribute="leading" id="Y4G-x8-N8v"/>
                                     <constraint firstItem="8dX-7g-U3g" firstAttribute="leading" secondItem="ZPz-bO-cV4" secondAttribute="leading" id="YPx-f5-MMC"/>
+                                    <constraint firstAttribute="bottom" secondItem="WhV-nj-LyZ" secondAttribute="bottom" constant="24" id="gmg-a6-Art"/>
                                     <constraint firstItem="ZPz-bO-cV4" firstAttribute="trailing" secondItem="8dX-7g-U3g" secondAttribute="trailing" id="hyy-OR-faO"/>
                                     <constraint firstItem="h55-ce-8eL" firstAttribute="leading" secondItem="ZPz-bO-cV4" secondAttribute="leading" id="kPv-Sx-npo"/>
                                     <constraint firstItem="WhV-nj-LyZ" firstAttribute="leading" secondItem="Cui-Qd-y7M" secondAttribute="leading" constant="272" id="lsO-7x-9EM"/>
                                     <constraint firstItem="ZPz-bO-cV4" firstAttribute="top" secondItem="h55-ce-8eL" secondAttribute="bottom" constant="8" symbolic="YES" id="s7W-jx-SQK"/>
                                     <constraint firstItem="blT-EX-1Yz" firstAttribute="top" secondItem="8dX-7g-U3g" secondAttribute="bottom" constant="14" id="uF9-7r-y4C"/>
                                     <constraint firstItem="vVh-ml-fp7" firstAttribute="leading" secondItem="Cui-Qd-y7M" secondAttribute="leading" constant="24" id="vcB-e2-2CU"/>
+                                    <constraint firstItem="vVh-ml-fp7" firstAttribute="top" secondItem="Cui-Qd-y7M" secondAttribute="top" constant="30" id="ynt-dX-bRJ"/>
                                     <constraint firstItem="8dX-7g-U3g" firstAttribute="leading" secondItem="blT-EX-1Yz" secondAttribute="leading" id="zoR-U1-nh6"/>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
+                                        <exclude reference="ynt-dX-bRJ"/>
                                         <exclude reference="Gjq-7k-1jr"/>
                                         <exclude reference="OGG-PA-J9T"/>
                                         <exclude reference="9sb-ME-ZiV"/>
+                                        <exclude reference="BEN-rf-Afb"/>
                                         <exclude reference="O8I-Ts-pER"/>
+                                        <exclude reference="SNJ-dd-mk2"/>
+                                        <exclude reference="gmg-a6-Art"/>
                                     </mask>
                                 </variation>
                                 <variation key="widthClass=compact" misplaced="YES">
                                     <rect key="frame" x="0.0" y="187" width="400" height="413"/>
                                     <mask key="constraints">
+                                        <exclude reference="XmW-s1-wOh"/>
+                                        <include reference="ynt-dX-bRJ"/>
                                         <include reference="Gjq-7k-1jr"/>
                                         <exclude reference="SQ0-kz-DbY"/>
                                         <include reference="OGG-PA-J9T"/>
                                         <exclude reference="uF9-7r-y4C"/>
                                         <include reference="9sb-ME-ZiV"/>
+                                        <include reference="BEN-rf-Afb"/>
+                                        <exclude reference="Fu1-2P-WXd"/>
                                         <include reference="O8I-Ts-pER"/>
+                                        <include reference="SNJ-dd-mk2"/>
+                                        <include reference="gmg-a6-Art"/>
                                         <exclude reference="lsO-7x-9EM"/>
                                     </mask>
                                 </variation>
@@ -176,19 +249,6 @@
                                     <rect key="frame" x="0.0" y="0.0" width="400" height="145"/>
                                 </variation>
                             </view>
-                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wkg-hO-s7s">
-                                <rect key="frame" x="295" y="269" width="305" height="46"/>
-                                <animations/>
-                                <color key="backgroundColor" red="0.20392156859999999" green="0.20392156859999999" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="tintColor" red="0.73214972019195557" green="0.69657403230667114" blue="0.707344651222229" alpha="0.83149476931330468" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Sign Up"/>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="199" y="144" width="201" height="46"/>
-                                </variation>
-                                <connections>
-                                    <action selector="showSignUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="51I-yG-dNN"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AQA-Yp-na1">
                                 <rect key="frame" x="0.0" y="269" width="295" height="46"/>
                                 <animations/>
@@ -207,6 +267,19 @@
                                 </variation>
                                 <connections>
                                     <action selector="showSignIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cu0-I5-RWC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wkg-hO-s7s">
+                                <rect key="frame" x="295" y="269" width="305" height="46"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.20392156859999999" green="0.20392156859999999" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.73214972019195557" green="0.69657403230667114" blue="0.707344651222229" alpha="0.83149476931330468" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Sign Up"/>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="199" y="144" width="201" height="46"/>
+                                </variation>
+                                <connections>
+                                    <action selector="showSignUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="51I-yG-dNN"/>
                                 </connections>
                             </button>
                         </subviews>
