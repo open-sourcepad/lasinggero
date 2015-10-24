@@ -30,7 +30,7 @@ class DrinkTableViewCell: UITableViewCell {
         drink = drinkData
         drink.drinkCounted = drink.drinkCounted
         drinkCount?.text = String(drink.drinkCount)
-        drinkLabel?.text = "\(drink.drinkName)(\(drink.drinkServingType)\(drink.drinkSize))"
+        drinkLabel?.text = "\(drink.drinkName) - \(drink.drinkServingType)(\(Int(drink.drinkSize)) ml)"
     }
 
     @IBAction func minusBtnClicked(sender: AnyObject) {

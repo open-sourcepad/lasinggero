@@ -10,7 +10,7 @@ import UIKit
 
 class Drink: NSObject {
     var drinkName:String = ""
-    var drinkCount:Double = 0
+    var drinkCount:Int = 0
     var drinkServingType: String = ""
     var drinkSize:Double = 0
     var drinkId: Int = 0

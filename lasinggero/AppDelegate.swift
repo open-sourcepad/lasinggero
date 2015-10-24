@@ -14,7 +14,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     var currentUser: User!
-    var drinksItems:NSMutableArray = []
     var currOccassion: Occassion!
     
 
@@ -28,7 +27,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UILabel.appearance().substituteFontName = "Avenir"
         let userDefault = NSUserDefaults.standardUserDefaults()
         if (userDefault.objectForKey("authToken") != nil) {
-            populateList()
             goToLandingScreen()
         } else {
             goToLogIn()
@@ -72,32 +70,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let navController = UINavigationController(rootViewController: rootViewController)
         window?.rootViewController = navController
     }
-    
-    func populateList() {
-        let manager = Alamofire.Manager.sharedInstance
-        let authToken = NSUserDefaults.standardUserDefaults().objectForKey("authToken") as! String
-        let params = ["authentication_token": "\(authToken)"]
-        manager.request(.GET, BENCHMARK_API, parameters: params)
-            .responseJSON { response in
-                debugPrint(response)
-                if response.result.error == nil {
-                    self.drinksItems = []
-                    debugPrint(response.result.value)
-                    let data = response.result.value as! NSDictionary
-                    let drinksData = data["drinks"] as! NSArray
-                    for drinkVar in drinksData{
-                        let drink = drinkVar as! NSDictionary
-                        let drinkCat = Drink()
-                        drinkCat.drinkId = drink.objectForKey("id") as! Int
-                        drinkCat.drinkName = drink["name"] as! String
-                        drinkCat.drinkCount = 0
-                        drinkCat.drinkServingType = drink["serving_type"] as! String
-                        drinkCat.drinkSize = drink["serving"] as! Double
-                        self.drinksItems.addObject(drinkCat)
-                    }
-                }
-        }
-    }
-
 
 }

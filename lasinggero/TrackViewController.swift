@@ -28,6 +28,12 @@ class TrackViewController: UIViewController {
         progressView.backgroundColor = UIColor.greenColor()
         view.addSubview(progressView)
         view.sendSubviewToBack(progressView)
+        
+        servingTypeLabel.center = CGPoint(x: SCREEN_CENTER_X, y: servingTypeLabel.center.y)
+        shotsLabel.center = CGPoint(x: SCREEN_CENTER_X, y: shotsLabel.center.y)
+        drinkLabel.center = CGPoint(x: SCREEN_CENTER_X, y: drinkLabel.center.y)
+
+
     }
     
     override func viewWillAppear(animated: Bool) {

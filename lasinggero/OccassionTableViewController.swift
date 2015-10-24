@@ -11,6 +11,7 @@ import Alamofire
 
 class OccassionTableViewController: UITableViewController {
 
+    
     var occassionList:NSMutableArray = []
     
     override func viewDidLoad() {
@@ -76,6 +77,10 @@ class OccassionTableViewController: UITableViewController {
                 }
                 self.tableView.reloadData()
         }
+    }
+    
+    @IBAction func logOutUser(sender: AnyObject) {
+//        NSUserDefault.share
     }
     
 

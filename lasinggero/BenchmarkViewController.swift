@@ -62,8 +62,6 @@ class BenchmarkViewController: UIViewController, UITableViewDataSource, UITableV
                         drinkCat.drinkServingType = drink["serving_type"] as! String
                         drinkCat.drinkSize = drink["serving"] as! Double
                         self.drinks.addObject(drinkCat)
-                        AppDelegate().drinksItems.addObject(drinkCat)
-
                     }
                 }
                 self.drinksTable.reloadData()

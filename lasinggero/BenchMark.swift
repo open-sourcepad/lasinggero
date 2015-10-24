@@ -34,7 +34,9 @@ class BenchMark: UIView {
     }
     
     func minusBtnClicked() {
-        drinkCount.text = String(Int(drinkCount.text!)! - 1)
+        if drink.drinkCounted > 0 {
+            drinkCount.text = String(Int(drinkCount.text!)! - 1)
+        }
     }
     
     func setCurrentDrink(currentDrink: Drink) {
